@@ -1,0 +1,47 @@
+.container{
+    min-height: 100vh;
+    background: black;
+    padding: 5rem;
+    color: white;
+
+    p{
+        font-size: 35px;
+        font-weight: 600;
+    }
+
+    .main{
+        margin-top: 12px;
+        background-color: #2f2d28;
+        padding: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        border-radius: 18px;
+
+        p{
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.771);
+        }
+
+        li{
+            display: flex;
+            justify-content: space-evenly;
+            list-style-type: none;
+            background-color: #3a3833;
+            padding: 12px;
+            border-radius: 18px;
+
+            button{
+                padding: 0px 5px;
+                border: 1px solid white;
+                background-color: transparent;
+                color: whitesmoke;
+                border-radius: 5px;
+                max-height: 4vh;
+            }
+
+        }
+    }
+
+}

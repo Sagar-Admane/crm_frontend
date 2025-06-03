@@ -1,0 +1,107 @@
+.container{
+    background: url("../../assets/Frame2.svg");
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    // justify-content: space-b;
+    align-items: end;
+    gap: 4em;
+    flex-direction: column;
+
+    .header1{
+        padding: 50px 70px;
+        width: 50vw;
+        p{
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            font-weight: 400;
+            position: relative;
+        }
+
+        p::before{
+            content: "";
+            position: absolute;
+            border-bottom : 2px solid white;
+            width: 0%;
+            bottom: -6px;
+        }
+
+        p:hover::before{
+            width: 100%;
+            transition: 0.5s all ease-in-out;
+        }
+
+        .list{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            gap: 80px;
+        }
+    }
+
+    .hero{
+        border-radius: 14px;
+        margin-right: 80px;
+        color: white;
+        background-color: #36332e;
+        padding: 30px;
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        justify-content: center;
+        align-items: center;
+
+        p{
+            font-size: 24px;
+        }
+
+        .form{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+
+            .input1{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 12px;
+
+                select, input, button{
+                    padding: 5px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    background-color: #3a3833;
+                    border: 1px solid #615f5b;
+                    border-radius: 5px;
+                    color: #615f5b;
+                }
+
+            }
+
+            .button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 12px;
+                button{
+                    cursor: pointer;
+                    padding: 8px;
+                    border: 1px solid black;
+                    background-color: #3a3833;
+                    font-size: medium;
+                    background-color: #3a3833;
+                    border: 1px solid #615f5b;
+                    border-radius: 5px;
+                    color: #615f5b;
+                }
+            }
+        }
+    }
+}
