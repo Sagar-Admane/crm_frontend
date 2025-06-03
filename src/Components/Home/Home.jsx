@@ -19,7 +19,7 @@ function Home() {
             <p className={style.p2} >Sign up to see more</p>
           </div>
           <div className={style.auth} >
-            <a href="http://localhost:3001/auth/google">
+            <a href="https://mini-crm-backend-zamw.onrender.com/auth/google">
               <button>
                 <img src={google} alt="" />
                 <p>Continue with Google</p>

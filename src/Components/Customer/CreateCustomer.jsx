@@ -20,7 +20,7 @@ function CreateCustomer() {
     async function handleClick(e){
         e.preventDefault();
         try {
-            const res = await axios.post('http://localhost:3001/api/customer', {
+            const res = await axios.post('https://mini-crm-backend-zamw.onrender.com/api/customer', {
                 f : JSON.stringify(form),
             });
             if(res){

@@ -12,7 +12,7 @@ function MessageSuggester() {
     e.preventDefault();
     try {
         setLoading(true);
-      const res = await axios.post(`http://localhost:3001/api/generate`, {
+      const res = await axios.post(`https://mini-crm-backend-zamw.onrender.com/api/generate`, {
         obj,
       });
       if (res) {

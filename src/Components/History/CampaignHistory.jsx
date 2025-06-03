@@ -10,7 +10,7 @@ function CampaignHistory() {
 
     useEffect(() => {
         async function init(){
-            const res = await axios.get(`http://localhost:3001/api/segment/history`);
+            const res = await axios.get(`https://mini-crm-backend-zamw.onrender.com/api/segment/history`);
             if(res){
                 setCampaigns(res.data.result);
             } else {
@@ -31,7 +31,7 @@ function CampaignHistory() {
       const isVisible = visibleLogs[campaignId];
       if(!isVisible && !logs[campaignId]){
       try {
-        const res = await axios.get(`http://localhost:3001/api/logs/${campaignId}`);
+        const res = await axios.get(`https://mini-crm-backend-zamw.onrender.com/api/logs/${campaignId}`);
         setLogs((prev) => ({...prev, [campaignId] : res.data}));
       } catch (error) {
         console.log(error.message);

@@ -38,7 +38,7 @@ function CreateCampaign() {
     async function handleSubmit(){
         console.log('Segmentation rule  : ', rules);
         try {
-            const res = await axios.post('http://localhost:3001/api/segment/view', {
+            const res = await axios.post('https://mini-crm-backend-zamw.onrender.com/api/segment/view', {
                 rules
             })
             console.log(res.data.cutomers);
@@ -52,7 +52,7 @@ function CreateCampaign() {
 
     async function handleSave(){
         try {
-            const res = await axios.post(`http://localhost:3001/api/segment/save`, {
+            const res = await axios.post(`https://mini-crm-backend-zamw.onrender.com/api/segment/save`, {
                 rules
             })
             if(rules){
@@ -69,7 +69,7 @@ function CreateCampaign() {
     useEffect(() => {
         async function getUser(){
             try {
-                const res = await axios.get('http://localhost:3001/auth/user', {withCredentials : true});
+                const res = await axios.get('https://mini-crm-backend-zamw.onrender.com/auth/user', {withCredentials : true});
                 console.log(res.data); 
             } catch (error) {
                 console.log(error.message);
